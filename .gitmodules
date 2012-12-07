@@ -21,7 +21,3 @@
 	path = bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
   ignore = untracked
-[submodule "bundle/vim-drupal"]
-	path = bundle/vim-drupal
-	url = git://drupalcode.org/project/vimrc/
-  ignore = untracked
