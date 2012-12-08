@@ -30,3 +30,6 @@
 [submodule "bundle/monokai"]
 	path = bundle/monokai
 	url = https://github.com/sickill/vim-monokai.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = https://github.com/tsaleh/vim-matchit.git
