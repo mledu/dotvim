@@ -5,6 +5,7 @@ set nocompatible                  " Must come first because it changes other opt
 
 " Initialize Pathogen
 runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#infect('~/.vim/bundle/drupalvim/bundle') " Initialize drupal module.
 call pathogen#infect()            " Initialize pathogen.
 
 syntax enable                     " Turn on syntax highlighting.

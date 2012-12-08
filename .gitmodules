@@ -41,3 +41,7 @@
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
   ignore = untracked
+[submodule "bundle/drupalvim"]
+	path = bundle/drupalvim
+	url = http://git.drupal.org/project/vimrc.git
+  ignore = untracked
