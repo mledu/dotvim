@@ -94,3 +94,7 @@
 	path = bundle/drupal-snippets
 	url = https://github.com/tanarurkerem/drupal-snippets.git
   ignore = untracked
+[submodule "bundle/easymotion"]
+	path = bundle/easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
+  ignore = untracked
