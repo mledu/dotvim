@@ -98,3 +98,7 @@
 	path = bundle/easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
   ignore = untracked
+[submodule "bundle/php"]
+	path = bundle/php
+	url = https://github.com/StanAngeloff/php.vim.git
+  ignore = untracked
