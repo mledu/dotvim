@@ -118,3 +118,7 @@
 	path = bundle/commentary
 	url = https://github.com/tpope/vim-commentary.git
   ignore = untracked
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+  ignore = untracked
