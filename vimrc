@@ -1,4 +1,3 @@
-" Example Vim configuration.
 " Copy or symlink to ~/.vimrc or ~/_vimrc.
 
 set nocompatible                  " Must come first because it changes other options.
@@ -52,7 +51,8 @@ set smartindent
 
 set laststatus=2                 " Show the status line all the time
 " Useful status information at bottom of screen
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
+"set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
+set fillchars+=stl:\ ,stlnc:\
 
 " Or use vividchalk
 colorscheme mustang
@@ -95,3 +95,8 @@ if has("autocmd")
   augroup END
 endif
 syntax on
+
+" Enable the powerline module.
+" python from powerline.ext.vim import source_plugin; source_plugin()
+source /usr/local/lib/python2.7/site-packages/powerline/ext/vim/source_plugin.vim
+let g:Powerline_symbols = 'fancy'
