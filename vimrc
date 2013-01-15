@@ -99,5 +99,5 @@ syntax on
 " Enable the powerline module.
 " python from powerline.ext.vim import source_plugin; source_plugin()
 "source /usr/local/lib/python2.7/site-packages/powerline/ext/vim/source_plugin.vim
-source ~/dotfiles/vim/powerline/powerline/ext/vim/source_plugin.vim
+source ~/dotfiles/powerline/powerline/ext/vim/source_plugin.vim
 let g:Powerline_symbols = 'fancy'
