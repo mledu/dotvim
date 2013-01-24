@@ -97,6 +97,6 @@ endif
 syntax on
 
 " Enable the powerline module.
-python from powerline.bindings.vim import source_plugin; source_plugin()
-"source ~/dotfiles/powerline/powerline/bindings/vim/plugin/source_plugin.vim
+"python from powerline.bindings.vim import source_plugin; source_plugin()
+source ~/dotfiles/powerline/powerline/bindings/vim/plugin/source_plugin.vim
 let g:Powerline_symbols = 'fancy'
