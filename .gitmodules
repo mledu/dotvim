@@ -66,14 +66,6 @@
 	path = bundle/haml
 	url = https://github.com/tpope/vim-haml.git
   ignore = untracked
-[submodule "bundle/lustyjuggler"]
-	path = bundle/lustyjuggler
-	url = https://github.com/vim-scripts/LustyJuggler.git
-  ignore = untracked
-[submodule "bundle/lusty"]
-	path = bundle/lusty
-	url = https://github.com/sjbach/lusty.git
-  ignore = untracked
 [submodule "bundle/coffee-script"]
 	path = bundle/coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
