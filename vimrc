@@ -1,14 +1,19 @@
 " Copy or symlink to ~/.vimrc or ~/_vimrc.
 
 set nocompatible                  " Must come first because it changes other options.
+filetype off
 
-" Initialize Pathogen
-runtime bundle/pathogen/autoload/pathogen.vim
-call pathogen#infect('~/.vim/bundle/drupalvim/bundle') " Initialize drupal module.
-call pathogen#infect()            " Initialize pathogen.
+" Initialize Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'flazz/vim-colorschemes'
 
 syntax enable                     " Turn on syntax highlighting.
-filetype plugin indent on         " Turn on file type detection.
+" filetype plugin indent on         " Turn on file type detection.
 
 runtime macros/matchit.vim        " Load the matchit plugin.
 
