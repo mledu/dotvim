@@ -1,16 +1,58 @@
 " Copy or symlink to ~/.vimrc or ~/_vimrc.
 
-set nocompatible                  " Must come first because it changes other options.
+set nocompatible
+
+" Needed for vundle will turn off after vundle inits.
 filetype off
 
-" Initialize Vundle
+" Initialize Vundle.
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" Vundle config.
 Bundle 'gmarik/vundle'
+
+" Git
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-git'
+
+" Editing
+Bundle 'tpope/vim-repeat'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'anyakichi/vim-surround'
+Bundle 'ragtag.vim'
+Bundle 'majutsushi/tagbar'
+Bundle 'matchit.zip'
+Bundle 'tomtom/tcomment_vim'
+Bundle 'michaeljsmith/vim-indent-object'
+
+" Buffer and file management
+Bundle 'FuzzyFinder'
+Bundle 'scrooloose/nerdtree'
+
+" Theme
+Bundle 'Valloric/vim-valloric-colorscheme'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'Valloric/vim-indent-guides'
+
+" Must be compiled
+Bundle 'Valloric/YouCompleteMe'
+
+" Languages
+Bundle 'jQuery'
+Bundle 'othree/html5.vim'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'helino/vim-json'
+Bundle 'scrooloose/syntastic'
+Bundle 'skammer/vim-css-color'
+
+" Snipits
+Bundle 'SirVer/ultisnips'
+
+" Utility
+Bundle 'L9'
+Bundle 'Rename'
+Bundle 'tpope/vim-repeat'
 
 syntax enable                     " Turn on syntax highlighting.
 " filetype plugin indent on         " Turn on file type detection.
