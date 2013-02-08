@@ -10,5 +10,9 @@ set lines=25 columns=100          " Window dimensions.
 
 " Uncomment to use.
 " set guioptions-=r                 " Don't show right scrollbar
-colorscheme molokai
-"colorscheme valloric
+" colorscheme molokai
+" colorscheme valloric
+colorscheme mustang
+
+" Indent Guides
+let g:indent_guides_enable_on_vim_startup = 1

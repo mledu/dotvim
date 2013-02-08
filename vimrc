@@ -24,7 +24,7 @@ Bundle 'ragtag.vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'matchit.zip'
 Bundle 'tomtom/tcomment_vim'
-Bundle 'michaeljsmith/vim-indent-object'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 " Buffer and file management
 Bundle 'FuzzyFinder'
@@ -33,7 +33,6 @@ Bundle 'scrooloose/nerdtree'
 " Theme
 Bundle 'Valloric/vim-valloric-colorscheme'
 Bundle 'flazz/vim-colorschemes'
-Bundle 'Valloric/vim-indent-guides'
 
 " Must be compiled
 Bundle 'Valloric/YouCompleteMe'
@@ -45,19 +44,27 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'helino/vim-json'
 Bundle 'scrooloose/syntastic'
 Bundle 'skammer/vim-css-color'
+Bundle "pangloss/vim-javascript"
 
 " Snipits
-Bundle 'SirVer/ultisnips'
+" Bundle 'SirVer/ultisnips'
 
 " Utility
 Bundle 'L9'
 Bundle 'Rename'
 Bundle 'tpope/vim-repeat'
 
-syntax enable                     " Turn on syntax highlighting.
-" filetype plugin indent on         " Turn on file type detection.
+" syntax enable                     " Turn on syntax highlighting.
+filetype plugin indent on         " Turn on file type detection.
 
 runtime macros/matchit.vim        " Load the matchit plugin.
+
+" Display Settings
+colorscheme mustang
+" set background=dark               " enable for dark terminals
+
+" Indent Guides
+" let g:indent_guides_enable_on_vim_startup = 1
 
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
@@ -101,9 +108,6 @@ set laststatus=2                 " Show the status line all the time
 "set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 set fillchars+=stl:\ ,stlnc:\
 
-" Or use vividchalk
-colorscheme mustang
-
 " Tab mappings.
 map <leader>tt :tabnew<cr>
 map <leader>te :tabedit
@@ -144,6 +148,4 @@ endif
 syntax on
 
 " Enable the powerline module.
-"python from powerline.bindings.vim import source_plugin; source_plugin()
-source ~/dotfiles/powerline/powerline/bindings/vim/plugin/source_plugin.vim
-let g:Powerline_symbols = 'fancy'
+set rtp+=~/dotfiles/powerline/powerline/bindings/vim
