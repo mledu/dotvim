@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 " Git
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-git'
+Bundle 'airblade/vim-gitgutter'
 
 " Editing
 Bundle 'tpope/vim-repeat'
@@ -25,10 +26,18 @@ Bundle 'majutsushi/tagbar'
 Bundle 'matchit.zip'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'myusuf3/numbers.vim'
+Bundle 'Tabular'
+Bundle 'tpope/vim-sleuth'
 
 " Buffer and file management
 Bundle 'FuzzyFinder'
 Bundle 'scrooloose/nerdtree'
+Bundle 'Buffergator'
+Bundle 'ack.vim'
+Bundle 'unimpaired.vim'
+Bundle 'ctrlp.vim'
+" Bundle 'nerdtree-ack'
 
 " Theme
 Bundle 'Valloric/vim-valloric-colorscheme'
@@ -44,15 +53,19 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'helino/vim-json'
 Bundle 'scrooloose/syntastic'
 Bundle 'skammer/vim-css-color'
-Bundle "pangloss/vim-javascript"
+Bundle 'pangloss/vim-javascript'
+Bundle 'Haml'
+Bundle 'mattn/zencoding-vim'
+Bundle 'PIV'
+Bundle 'colorv.vim'
 
 " Snipits
 " Bundle 'SirVer/ultisnips'
+Bundle 'msanders/snipmate.vim'
 
 " Utility
 Bundle 'L9'
 Bundle 'Rename'
-Bundle 'tpope/vim-repeat'
 
 " syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
@@ -132,6 +145,9 @@ map <leader>tm :tabmove
 " Automatic fold settings for specific files. Uncomment to use.
 " autocmd FileType ruby setlocal foldmethod=syntax
 " autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+
+" user the_silver_searcher instead of Ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Drupal settings
 if has("autocmd")
