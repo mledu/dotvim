@@ -34,7 +34,8 @@ Bundle 'tpope/vim-sleuth'
 Bundle 'FuzzyFinder'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Buffergator'
-Bundle 'ack.vim'
+" Bundle 'ack.vim'
+Bundle 'rking/ag.vim'
 Bundle 'unimpaired.vim'
 Bundle 'ctrlp.vim'
 " Bundle 'nerdtree-ack'
@@ -147,7 +148,7 @@ map <leader>tm :tabmove
 " autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 
 " user the_silver_searcher instead of Ack
-let g:ackprg = 'ag --nogroup --nocolor --column'
+" let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Drupal settings
 if has("autocmd")
